@@ -2,7 +2,6 @@
 
 ![Ansible](https://img.shields.io/badge/ansible-%231A1918.svg?style=for-the-badge&logo=ansible&logoColor=white)
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
---
 
 This repository contains a modular playbook for adding an Ubuntu machine to an Active Directory domain. The playbook performs a series of tasks, including configuring the hostname, creating a local user, installing necessary packages, configuring configuration files, and joining the machine to the domain.
 
