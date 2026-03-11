@@ -1,54 +1,8 @@
-﻿## :brazil: **Ansible Playbooks para adicionar o Ubuntu ao domínio [PT-BR]**
-Este repositório contém dois playbooks que demonstram como realizar as seguintes tarefas em sistemas Ubuntu:
+## Ansible Playbooks to Add Ubuntu to a Domain
 
-- Alterar o hostname
-- Criar um usuário local
-- Adicionar a uma domínio
+![Ansible](https://img.shields.io/badge/ansible-%231A1918.svg?style=for-the-badge&logo=ansible&logoColor=white)
+![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
 
-Esses playbooks foram desenvolvidos para demonstrar habilidades e conhecimento em Ansible, servindo tanto como portfólio pessoal quanto como material de estudo para outros interessados em aprender Ansible.
-
-### Playbook Monolítico
-O playbook monolítico realiza todas as etapas em um único arquivo, além de um arquivo de variáveis separado (vars_ubuntu_domain.yml). Este é um exemplo simples e direto de como utilizar Ansible para automatizar as tarefas mencionadas. A estrutura é a seguinte:
-
-    ├── ubuntu_domain.yml
-    └── vars_ubuntu_domain.yml
-
-### Playbook Modular
-O playbook modular utiliza a estrutura recomendada pelo Ansible, separando a lógica em roles, handlers, templates, etc. Isso facilita a manutenção e a reutilização de código. A estrutura é a seguinte:
-
-    ubuntu_domain_modular/
-    ├── ubuntu_domain.yml
-    ├── group_vars/
-    │   └── linux/
-    │       ├── change_hostname.yml
-    │       ├── local_user.yml
-    │       ├── install_packages.yml
-    │       └── domain_join.yml
-    └── roles/
-        ├── change_hostname/
-        │   └── tasks/
-        │       └── main.yml
-        ├── local_user/
-        │   └── tasks/
-        │       └── main.yml
-        ├── install_packages/
-        │   └── tasks/
-        │       └── main.yml
-        └── domain_join/
-            ├── meta/
-            │   └── main.yml
-            ├── tasks/
-            │   └── main.yml
-            ├── handlers/
-            │   └── main.yml
-            └── templates/
-                ├── krb5.conf.j2
-                └── sssd.conf.j2
-
-### Contribuição
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests para melhorias, correções ou novas funcionalidades.
-
-##  :us: Ansible Playbooks to Add Ubuntu to a Domain [English]
 
 This repository contains two playbooks that demonstrate how to perform the following tasks on Ubuntu systems:
 
@@ -96,5 +50,6 @@ The modular playbook uses the recommended Ansible structure, separating the logi
                 ├── krb5.conf.j2
                 └── sssd.conf.j2
 
-### Contribution
-Contributions are welcome! Feel free to open issues and pull requests for improvements, fixes, or new features.
+## 📄 License
+
+MIT — feel free to use, modify, and distribute.
